@@ -1,50 +1,51 @@
-Exercício: Implementação de uma Árvore Binária de Processos e Grafos de Dependências
-Parte 1: Implementação de uma Árvore Binária de Processos
-Objetivo: Implementar uma árvore binária para gerenciar processos em um sistema operacional.
+# Exercício: Implementação de uma Árvore Binária de Processos e Grafos de Dependências
 
-Descrição: Cada nó da árvore representa um processo, identificado por um número de processo (PID). A árvore deve ser balanceada para garantir eficiência nas operações de inserção, remoção e busca.
+## Parte 1: Implementação de uma Árvore Binária de Processos
+#### Objetivo: Implementar uma árvore binária para gerenciar processos em um sistema operacional.
 
-Passos:
+#### Descrição: Cada nó da árvore representa um processo, identificado por um número de processo (PID). A árvore deve ser balanceada para garantir eficiência nas operações de inserção, remoção e busca.
 
-Crie uma classe No que tenha um atributo pid (número do processo) e referências para os filhos esquerdo e direito.
+### Passos:
 
-Crie uma classe ArvoreProcessos que tenha um atributo raiz e métodos para inserir, remover e buscar processos.
+- Crie uma classe No que tenha um atributo pid (número do processo) e referências para os filhos esquerdo e direito.
 
-Implemente o método de inserção de forma recursiva, verificando se o pid deve ir para a esquerda ou direita.
+- Crie uma classe ArvoreProcessos que tenha um atributo raiz e métodos para inserir, remover e buscar processos.
 
-Implemente o método de busca em ordem para imprimir os processos em ordem crescente de pid.
+- Implemente o método de inserção de forma recursiva, verificando se o pid deve ir para a esquerda ou direita.
 
-Parte 2: Balanceamento da Árvore
-Objetivo: Implementar uma árvore AVL para garantir que a árvore de processos esteja balanceada.
+- Implemente o método de busca em ordem para imprimir os processos em ordem crescente de pid.
 
-Descrição: Modifique a classe ArvoreProcessos para que ela use uma árvore AVL.
+## Parte 2: Balanceamento da Árvore
+#### Objetivo: Implementar uma árvore AVL para garantir que a árvore de processos esteja balanceada.
 
-Passos:
+#### Descrição: Modifique a classe ArvoreProcessos para que ela use uma árvore AVL.
 
-Adicione um atributo altura na classe Processo.
+### Passos:
 
-Implemente métodos para calcular a altura de um nó e o fator de balanceamento.
+- Adicione um atributo altura na classe Processo.
 
-Implemente as rotações necessárias (rotação à direita, rotação à esquerda, rotação dupla à direita, rotação dupla à esquerda).
+- Implemente métodos para calcular a altura de um nó e o fator de balanceamento.
 
-Modifique o método de inserção para incluir as rotações e manter a árvore balanceada.
+- Implemente as rotações necessárias (rotação à direita, rotação à esquerda, rotação dupla à direita, rotação dupla à esquerda).
 
-Parte 3: Representação de Dependências de Processos com Grafos
-Objetivo: Implementar um grafo para representar dependências entre processos.
+- Modifique o método de inserção para incluir as rotações e manter a árvore balanceada.
 
-Descrição: Cada nó do grafo representa um processo, e cada aresta representa uma dependência entre dois processos.
+## Parte 3: Representação de Dependências de Processos com Grafos
+#### Objetivo: Implementar um grafo para representar dependências entre processos.
 
-Passos:
+#### Descrição: Cada nó do grafo representa um processo, e cada aresta representa uma dependência entre dois processos.
 
-Crie uma classe GrafoProcessos que tenha um mapa de adjacência para representar as dependências.
+### Passos:
 
-Implemente métodos para adicionar e remover processos e dependências.
+- Crie uma classe GrafoProcessos que tenha um mapa de adjacência para representar as dependências.
 
-Implemente um método para imprimir o grafo, mostrando as dependências entre os processos.
+- Implemente métodos para adicionar e remover processos e dependências.
 
-Tarefas
-Implementar as classes Processo, ArvoreProcessos, ArvoreAVL e GrafoProcessos.
+- Implemente um método para imprimir o grafo, mostrando as dependências entre os processos.
 
-Testar a inserção, remoção e balanceamento de processos na árvore.
+### Tarefas
+- Implementar as classes Processo, ArvoreProcessos, ArvoreAVL e GrafoProcessos.
 
-Adicionar dependências entre processos no grafo e testar a remoção de processos.
+- Testar a inserção, remoção e balanceamento de processos na árvore.
+
+- Adicionar dependências entre processos no grafo e testar a remoção de processos.
